@@ -40,6 +40,7 @@ public class login extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         username = new javax.swing.JTextField();
@@ -49,14 +50,16 @@ public class login extends javax.swing.JFrame {
         jButtoncancel = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(89, 199, 198));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 36, 336, -1));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\atomix_user31.png")); // NOI18N
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 336, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\atomix_user31.png")); // NOI18N
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 336, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 360, 430));
 
@@ -125,9 +128,9 @@ public class login extends javax.swing.JFrame {
         /*Connection conn=DriverManager.getConnection("jdbc:ucanaccess:C:\\QLOTOG12014.bak");
         Statement s = conn.createStatement();*/
 
-        try{
+           try{
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            con = DriverManager.getConnection("jdbc:sqlserver://localhost\\MSSQLSERVER:1433;databaseName=OTOG2;user=sa;password=cac");
+            con = DriverManager.getConnection("jdbc:sqlserver://localhost\\MSSQLSERVER:1433;databaseName=OTOG2;user=sa;password=123");
             String sql = "select * from signin where username=? and password=?";
             PreparedStatement pst = con.prepareStatement(sql);
             pst.setString(1, username.getText());
@@ -140,7 +143,7 @@ public class login extends javax.swing.JFrame {
                 setVisible(false);
             }
             else{
-                JOptionPane.showMessageDialog(null,"Đăng nhập thất bại ! Sai tài khoản hoặc mật khẩu");
+                JOptionPane.showMessageDialog(null,"Đăng nhập thất bại! Sai tài khoản hoặc mật khẩu");
                 username.setText("");
                 Password.setText("");
             }
@@ -203,6 +206,7 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField username;

@@ -116,8 +116,8 @@ public void Load(){
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
-        jComboBoxmpsc = new javax.swing.JComboBox<>();
-        jComboBoxtenpt = new javax.swing.JComboBox<>();
+        jComboBoxmpsc = new javax.swing.JComboBox<String>();
+        jComboBoxtenpt = new javax.swing.JComboBox<String>();
         jTextFieldsl = new javax.swing.JTextField();
         jTextFieldnd = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
@@ -151,6 +151,7 @@ public void Load(){
         jPanel12 = new javax.swing.JPanel();
 
         setTitle("PHIẾU SỬA CHỬA");
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(45, 61, 78));
         jPanel1.setPreferredSize(new java.awt.Dimension(1200, 600));
@@ -340,7 +341,7 @@ public void Load(){
         jLabelbsx.setText(" ");
         jPanel4.add(jLabelbsx, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 70, 140, 40));
 
-        jLabeltpt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabeltpt.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         jLabeltpt.setForeground(new java.awt.Color(255, 255, 255));
         jLabeltpt.setText(" ");
         jPanel4.add(jLabeltpt, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 130, 150, 40));
@@ -439,7 +440,7 @@ public void Load(){
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
-                .addContainerGap(379, Short.MAX_VALUE)
+                .addContainerGap(409, Short.MAX_VALUE)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(354, 354, 354))
         );
@@ -448,7 +449,7 @@ public void Load(){
             .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
         );
 
-        jPanel1.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1160, 50));
+        jPanel1.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, 50));
 
         jPanel12.setBackground(new java.awt.Color(29, 187, 156));
 
@@ -456,24 +457,24 @@ public void Load(){
         jPanel12.setLayout(jPanel12Layout);
         jPanel12Layout.setHorizontalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1160, Short.MAX_VALUE)
+            .addGap(0, 1190, Short.MAX_VALUE)
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 30, Short.MAX_VALUE)
         );
 
-        jPanel1.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 610, 1160, 30));
+        jPanel1.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 610, 1190, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1160, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1190, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();

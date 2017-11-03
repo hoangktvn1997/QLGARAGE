@@ -52,6 +52,7 @@ public class QDSD extends javax.swing.JFrame {
         jLabel8.setText("jLabel8");
 
         setTitle("Quy định sử dụng phần mềm");
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());

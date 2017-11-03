@@ -10,6 +10,7 @@
   </NonVisualComponents>
   <Properties>
     <Property name="title" type="java.lang.String" value="Quy &#x111;&#x1ecb;nh s&#x1eed; d&#x1ee5;ng ph&#x1ea7;n m&#x1ec1;m"/>
+    <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>

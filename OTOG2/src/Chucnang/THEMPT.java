@@ -106,7 +106,7 @@ public void Load(){
         jTextFieldtenpt = new javax.swing.JTextField();
         jTextFieldslpt = new javax.swing.JTextField();
         jTextFielddongia = new javax.swing.JTextField();
-        jComboBoxloaitc = new javax.swing.JComboBox<>();
+        jComboBoxloaitc = new javax.swing.JComboBox<String>();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
@@ -137,6 +137,7 @@ public void Load(){
         jPanel4 = new javax.swing.JPanel();
 
         setTitle("THÊM PHỤ TÙNG XE");
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(45, 61, 78));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -438,7 +439,7 @@ public void Load(){
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1240, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

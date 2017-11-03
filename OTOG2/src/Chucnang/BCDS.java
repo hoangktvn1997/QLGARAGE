@@ -88,6 +88,7 @@ public void LoadData(){
         jLabel6.setText("jLabel6");
 
         setTitle("BÁO CÁO DOANH SỐ");
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(0, 168, 118));

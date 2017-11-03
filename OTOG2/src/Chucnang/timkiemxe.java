@@ -107,6 +107,7 @@ public void LoadData(){
         jLabel5.setText("jLabel5");
 
         setTitle("TÌM KIẾM XE");
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -134,8 +135,6 @@ public void LoadData(){
         );
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 230, 70));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\M.png")); // NOI18N
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 310, 310));
 
         jPanel5.setBackground(new java.awt.Color(29, 187, 156));

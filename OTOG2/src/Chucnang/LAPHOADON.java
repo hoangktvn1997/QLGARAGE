@@ -123,30 +123,31 @@ public class LAPHOADON extends javax.swing.JFrame {
         jLabel2.setText("jLabel2");
 
         setTitle("HÓA ĐƠN");
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(45, 61, 78));
         jPanel1.setPreferredSize(new java.awt.Dimension(450, 600));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Mã Sửa");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 190, -1, 29));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, -1, 29));
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Ngày Sửa");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 270, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 270, -1, 40));
 
         jTextFieldht.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jPanel1.add(jTextFieldht, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, 250, 50));
-        jPanel1.add(jDateChoosernt, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 330, 250, 50));
+        jPanel1.add(jTextFieldht, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, 250, 50));
+        jPanel1.add(jDateChoosernt, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 340, 250, 50));
 
         jTextFielddt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jPanel1.add(jTextFielddt, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 260, 250, 40));
+        jPanel1.add(jTextFielddt, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 260, 250, 50));
 
         jTextFieldttien.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jPanel1.add(jTextFieldttien, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 410, 250, 50));
+        jPanel1.add(jTextFieldttien, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 420, 250, 50));
 
         jComboBoxbsx.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jComboBoxbsx.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -159,19 +160,19 @@ public class LAPHOADON extends javax.swing.JFrame {
                 jComboBoxbsxActionPerformed(evt);
             }
         });
-        jPanel1.add(jComboBoxbsx, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 180, 250, 50));
+        jPanel1.add(jComboBoxbsx, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 180, 250, 50));
 
         jLabel10.setBackground(new java.awt.Color(204, 204, 204));
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IconImage/icons8_Barcode_Scanner_48px.png"))); // NOI18N
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, -1, -1));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 180, -1, -1));
 
         jLabel12.setBackground(new java.awt.Color(204, 204, 204));
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IconImage/icons8_Wheel_48px_3.png"))); // NOI18N
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, -1, 50));
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, -1, 50));
 
         jPanel3.setBackground(new java.awt.Color(54, 71, 93));
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Biển Số Xe");
 
@@ -180,7 +181,7 @@ public class LAPHOADON extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(55, Short.MAX_VALUE)
+                .addContainerGap(53, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addContainerGap())
         );
@@ -192,7 +193,7 @@ public class LAPHOADON extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, 150, 50));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 150, 50));
 
         jPanel4.setBackground(new java.awt.Color(54, 71, 93));
 
@@ -207,7 +208,7 @@ public class LAPHOADON extends javax.swing.JFrame {
             .addGap(0, 50, Short.MAX_VALUE)
         );
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, -1, 50));
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 180, -1, 50));
 
         jPanel5.setBackground(new java.awt.Color(54, 71, 93));
 
@@ -230,12 +231,12 @@ public class LAPHOADON extends javax.swing.JFrame {
                 .addComponent(jLabel9))
         );
 
-        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 260, -1, -1));
+        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 260, -1, 50));
 
         jPanel6.setBackground(new java.awt.Color(54, 71, 93));
 
         jLabel5.setBackground(new java.awt.Color(54, 71, 93));
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Ngày Thu");
 
@@ -261,14 +262,14 @@ public class LAPHOADON extends javax.swing.JFrame {
                 .addComponent(jLabel11))
         );
 
-        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 330, 150, -1));
+        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 340, 150, -1));
 
         jPanel7.setBackground(new java.awt.Color(54, 71, 93));
 
         jLabel13.setBackground(new java.awt.Color(204, 204, 204));
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IconImage/icons8_Money_Bag_40px.png"))); // NOI18N
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Tổng Tiền");
 
@@ -292,7 +293,7 @@ public class LAPHOADON extends javax.swing.JFrame {
                     .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
-        jPanel1.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 410, -1, 50));
+        jPanel1.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 420, -1, 50));
 
         jPanel8.setBackground(new java.awt.Color(29, 187, 156));
 
@@ -300,14 +301,14 @@ public class LAPHOADON extends javax.swing.JFrame {
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 570, Short.MAX_VALUE)
+            .addGap(0, 630, Short.MAX_VALUE)
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 30, Short.MAX_VALUE)
         );
 
-        jPanel1.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 630, 570, 30));
+        jPanel1.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 630, 630, 30));
 
         jPanel9.setBackground(new java.awt.Color(29, 187, 156));
 
@@ -320,16 +321,16 @@ public class LAPHOADON extends javax.swing.JFrame {
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGap(145, 145, 145)
+                .addGap(165, 165, 165)
                 .addComponent(jLabel8)
-                .addContainerGap(174, Short.MAX_VALUE))
+                .addContainerGap(214, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
         );
 
-        jPanel1.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 70));
+        jPanel1.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 70));
 
         jButtonstt.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jButtonstt.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IconImage/Print.png"))); // NOI18N
@@ -339,7 +340,7 @@ public class LAPHOADON extends javax.swing.JFrame {
                 jButtonsttActionPerformed(evt);
             }
         });
-        jPanel1.add(jButtonstt, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 510, 170, 67));
+        jPanel1.add(jButtonstt, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 510, 170, 67));
 
         jPanel10.setBackground(new java.awt.Color(54, 71, 93));
 
@@ -369,17 +370,17 @@ public class LAPHOADON extends javax.swing.JFrame {
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 490, 420, 110));
+        jPanel1.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 490, 420, 110));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 570, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 630, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 652, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );

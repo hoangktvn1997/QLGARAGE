@@ -55,6 +55,7 @@ public class USERSIGNUP extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
         jPanel13 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
@@ -73,7 +74,8 @@ public class USERSIGNUP extends javax.swing.JFrame {
             .addGap(0, 100, Short.MAX_VALUE)
         );
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("TẠO USER");
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(61, 79, 105));
@@ -219,7 +221,7 @@ public class USERSIGNUP extends javax.swing.JFrame {
 
         jPanel6.setBackground(new java.awt.Color(61, 79, 105));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\photo.png")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\photo.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -227,7 +229,9 @@ public class USERSIGNUP extends javax.swing.JFrame {
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel4)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel6))
                 .addContainerGap(18, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
@@ -235,7 +239,9 @@ public class USERSIGNUP extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addComponent(jLabel4)
-                .addContainerGap(94, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
+                .addComponent(jLabel6)
+                .addGap(46, 46, 46))
         );
 
         getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 390, 480));
@@ -306,9 +312,9 @@ public class USERSIGNUP extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        try{
+         try{
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            con = DriverManager.getConnection("jdbc:sqlserver://localhost\\MSSQLSERVER:1433;databaseName=OTOG2;user=sa;password=cac");
+            con = DriverManager.getConnection("jdbc:sqlserver://localhost\\MSSQLSERVER:1433;databaseName=OTOG2;user=sa;password=123");
             String sql = "insert into dbo.signin values(?,?,?)";
             PreparedStatement pst = con.prepareStatement(sql);
             pst.setString(1, jTextFieldht.getText());
@@ -316,14 +322,19 @@ public class USERSIGNUP extends javax.swing.JFrame {
             pst.setString(3, jTextFielddt.getText());
             int chk = pst.executeUpdate();
             if(chk  >0){
-                JOptionPane.showMessageDialog(this,"Đăng ký tài khoản thành công !");
+                JOptionPane.showMessageDialog(this,"Tạo tài khoản thành công !");
+
             }
+                                
+
+            
+
             con.close();
         }
         catch(Exception e){
             e.getMessage();
             System.out.println(e.toString());
-            JOptionPane.showMessageDialog(this,"Đăng ký tài khoản thất bại !");
+            JOptionPane.showMessageDialog(this,"Tạo tài khoản không thành công !");
         }
         jTextFieldht.setText("");
         jTextFieldbs.setText("");
@@ -385,6 +396,7 @@ public class USERSIGNUP extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;

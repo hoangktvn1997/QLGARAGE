@@ -20,7 +20,7 @@ public class Connect {
         Connection conn =null;
         try{
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-                conn = DriverManager.getConnection("jdbc:sqlserver://localhost\\MSSQLSERVER:1433;databaseName=OTOG2;user=sa;password=cac");
+                conn = DriverManager.getConnection("jdbc:sqlserver://localhost\\MSSQLSERVER:1433;databaseName=OTOG2;user=sa;password=123");
             if(conn != null){
                 System.out.println("Connect Success!");
             }

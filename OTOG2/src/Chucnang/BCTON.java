@@ -99,6 +99,7 @@ public static java.sql.Date converUtilDateToSqlDate(java.util.Date date){
         jPanel6 = new javax.swing.JPanel();
 
         setTitle("BÁO CÁO TỒN");
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(37, 176, 197));

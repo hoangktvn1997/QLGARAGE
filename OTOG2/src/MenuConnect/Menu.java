@@ -37,7 +37,7 @@ public class Menu extends javax.swing.JFrame {
         {
             setExtendedState(MAXIMIZED_BOTH);
             jPanel1.setBackground(new Color(45, 61, 78,200));
-//           jPanel11.setBackground(new Color(6, 135, 113,200));
+       //  jPanel3.setBackground(new Color(4,152,127,1));
         }
     }
 
@@ -119,6 +119,7 @@ public class Menu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("QUẢN LÝ GARAGE");
+        setResizable(false);
         getContentPane().setLayout(null);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -391,7 +392,7 @@ public class Menu extends javax.swing.JFrame {
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
+                .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel9Layout.setVerticalGroup(
@@ -502,6 +503,8 @@ public class Menu extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(120, 30, 1660, 410);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IconImage/zzzzzzzzzzzzzzzzzzzzzzzz.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
         jLabel2.setBounds(0, 0, 2000, 1070);
 

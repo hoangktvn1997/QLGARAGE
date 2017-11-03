@@ -123,6 +123,7 @@ public void Load(){
         setAlwaysOnTop(true);
         setBounds(new java.awt.Rectangle(45, 61, 78, 78));
         setFocusable(false);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());

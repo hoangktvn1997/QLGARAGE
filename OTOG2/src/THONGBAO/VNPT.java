@@ -51,6 +51,7 @@ public class VNPT extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
 
         setTitle("Về nhà phát triển");
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(63, 186, 165));
@@ -168,7 +169,7 @@ public class VNPT extends javax.swing.JFrame {
         jLabel23.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\New folder (2)\\20161014_58006c3061a4c.png")); // NOI18N
         jPanel4.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 100, 140));
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 700, -1));
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 700, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 500));
 

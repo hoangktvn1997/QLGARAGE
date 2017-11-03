@@ -133,7 +133,7 @@ public class TNXE extends javax.swing.JFrame {
         jTextFieldbs = new javax.swing.JTextField();
         jTextFielddc = new javax.swing.JTextField();
         jTextFielddt = new javax.swing.JTextField();
-        jComboBoxhx = new javax.swing.JComboBox<>();
+        jComboBoxhx = new javax.swing.JComboBox<String>();
         jDateChoosernn = new com.toedter.calendar.JDateChooser();
         jButtonthemhx = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
@@ -172,6 +172,7 @@ public class TNXE extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setTitle("TIẾP NHẬN THÊM XE MỚI");
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(45, 61, 78));
         jPanel1.setPreferredSize(new java.awt.Dimension(1200, 650));
@@ -186,24 +187,24 @@ public class TNXE extends javax.swing.JFrame {
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 380, -1, 35));
 
         jTextFieldht.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jTextFieldht.setForeground(new java.awt.Color(204, 204, 204));
-        jPanel2.add(jTextFieldht, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 90, 330, 40));
+        jTextFieldht.setForeground(new java.awt.Color(102, 102, 102));
+        jPanel2.add(jTextFieldht, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 90, 330, 50));
 
         jTextFieldbs.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jTextFieldbs.setForeground(new java.awt.Color(204, 204, 204));
+        jTextFieldbs.setForeground(new java.awt.Color(102, 102, 102));
         jTextFieldbs.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldbsActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextFieldbs, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 150, 330, 50));
+        jPanel2.add(jTextFieldbs, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 160, 330, 50));
 
         jTextFielddc.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jTextFielddc.setForeground(new java.awt.Color(204, 204, 204));
+        jTextFielddc.setForeground(new java.awt.Color(102, 102, 102));
         jPanel2.add(jTextFielddc, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 370, 330, 50));
 
         jTextFielddt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jTextFielddt.setForeground(new java.awt.Color(204, 204, 204));
+        jTextFielddt.setForeground(new java.awt.Color(102, 102, 102));
         jPanel2.add(jTextFielddt, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 300, 330, 50));
 
         jComboBoxhx.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
@@ -256,7 +257,7 @@ public class TNXE extends javax.swing.JFrame {
         jLabel1.setText("HỌ & TÊN");
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, -1));
 
-        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 180, 40));
+        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 180, 50));
 
         jPanel5.setBackground(new java.awt.Color(54, 71, 93));
         jPanel5.setForeground(new java.awt.Color(54, 71, 93));
@@ -289,7 +290,7 @@ public class TNXE extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel2.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 180, 50));
+        jPanel2.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 180, 50));
 
         jPanel6.setBackground(new java.awt.Color(54, 71, 93));
         jPanel6.setForeground(new java.awt.Color(54, 71, 93));
@@ -430,7 +431,7 @@ public class TNXE extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jTablett);
 
-        jPanel10.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 656, 570));
+        jPanel10.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 660, 570));
 
         jPanel11.setBackground(new java.awt.Color(54, 71, 93));
 
@@ -503,6 +504,7 @@ public class TNXE extends javax.swing.JFrame {
         });
 
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IconImage/Sync.png"))); // NOI18N
         jButton2.setText("DỌN");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -525,20 +527,19 @@ public class TNXE extends javax.swing.JFrame {
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton1)
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jButton2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButtonthemmoi, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonsuatt, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonxoatt, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButtonxoatt, javax.swing.GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE)
+                    .addComponent(jButtonsuatt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButtonthemmoi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         jPanel13.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 660, 80));
